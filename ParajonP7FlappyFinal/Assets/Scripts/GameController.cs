@@ -11,9 +11,9 @@ public class GameController : MonoBehaviour
     public GameObject gameOverText;
     public Text scoreText;
     public bool gameOver = false;
-    public float scrollSpeed = -1.5f;
+    public float scrollSpeed = -2.5f;
 
-    private int score = 0;
+    public int score = 0;
 
     // Start is called before the first frame update
     void Awake()
@@ -39,7 +39,8 @@ public class GameController : MonoBehaviour
 
     public void BirdScored()
     {
-        if (gameOver)
+        Debug.Log("I am running");
+        if (gameOver == true)
         {
             return;
         }
